@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+	
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Code Player</title>
+		<link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+		<link rel="stylesheet" href="css/style.css">
+		
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="jquery-ui/jquery-ui.js"></script>
+		
+	</head>
+
+	<body>
+	
+		<div id="header">
+		
+			<div id="logo">
+			
+				CodePlayer
+			
+			</div>
+			
+			<div id="btnContainer">
+			
+				<div class="toggleBtn active" id="html">HTML</div>
+				
+				<div class="toggleBtn" id="css">CSS</div>
+				
+				<div class="toggleBtn" id="javascript">JavaScript</div>
+				
+				<div class="toggleBtn active" id="output">Output</div>
+			
+			</div>
+			
+		</div>
+		
+		<div id="bodyContainer">
+		
+            <textarea id="htmlPanel" class="panel"><p id="paragraph">Hello World!</p></textarea>
+            
+            <textarea id="cssPanel" class="panel hidden">p { color: green; }</textarea>
+            
+            <textarea id="javascriptPanel" class="panel hidden">document.getElementById("paragraph").innerHTML = "Hello Rob!";</textarea>
+            
+            <iframe id="outputPanel" class="panel"></iframe>
+		
+		</div>
+	 
+		<section id="htmlSection"></section>
+		<section id="cssSection"></section>
+		<section id="jsSection"></section>
+		<section id="consoleSection"></section>
+		<section id="outputSection"></section>
+	
+		<script src="js/script.js"></script>
+		
+	</body>
+	
+</html>
